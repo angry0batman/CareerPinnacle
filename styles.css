@@ -1,0 +1,105 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 50px; /* Adjust the height here */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox layout for the list */
+    align-items: center; /* Center items vertically */
+    flex-grow: 1; /* Allow the ul to grow */
+}
+
+nav ul li {
+    margin-right: 20px; /* Add some margin between items */
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(8, 7, 7);
+    text-align: right;
+    padding: 15px 20px; /* Reduce padding here */
+    text-decoration: none;
+    line-height: 20px; /* Add this to reduce the height of the link */
+}
+
+
+nav ul li a:hover {
+    background-color: #f12323;
+}
+
+nav ul li img {
+    height: 30px; /* Reduce the height of the image */
+    width: 90%;
+    padding: 15px 20px; /* Reduce padding here */
+    text-decoration: none;
+}
+
+nav ul li button {
+    margin-left: auto; /* Push the button to the right */
+}
+
+
+nav ul li button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    padding: 15px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li button:hover {
+    background-color: #f12323;
+    color: #ffffff;
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%; /* Cover the width of the page */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* White text */
+}
+
+.text-overlay h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.text-overlay p {
+    font-size: 25px;
+}
+
+
+
+  
