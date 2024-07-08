@@ -1,0 +1,53 @@
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+ .text-overlay h1 {
+            font-family: Garamond, serif;
+            animation: slideDown 1s ease-out;
+        }
+
+        .text-overlay p {
+            font-family: Copperplate, serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text-overlay p span {
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 0.15em;
+            display: inline-block;
+            animation: typing 5s steps(40, end) forwards; /* Apply the typing animation */
+            width: 0; /* Initial width set to 0 */
+        }
+
+        .text-overlay p span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .text-overlay p span:nth-child(2) {
+            animation-delay: 5s;
+        }
+
+        .text-overlay p span:nth-child(3) {
+            animation-delay: 10s;
+        }
