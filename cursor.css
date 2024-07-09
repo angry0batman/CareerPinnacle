@@ -8,18 +8,21 @@
   opacity: 0;
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: none; /* Hide the default cursor */
 }
 
 .cursor-dot {
   width: 8px;
   height: 8px;
   background-color: #ffffff;
+  cursor: none; /* Hide the default cursor */
 }
 
 .cursor-dot-outline {
   width: 40px;
   height: 40px;
   background-color: rgba(254, 235, 15, 0.5);
+  cursor: none; /* Hide the default cursor */
 }
 
 /*# sourceMappingURL=cursor.css.map */
