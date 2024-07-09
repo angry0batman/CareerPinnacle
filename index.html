@@ -6,6 +6,9 @@
     <title>Career Pinnacle</title>
     <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="front_animation.css">
+    <link rel="stylesheet" href="cursor.css">
+    
+    
 </head>
 <body>
     <script>
@@ -27,6 +30,8 @@
         }
     </script>
     <script src="front_animation.js"></script>
+
+   
     <nav>
         <ul>
             <li><img src="logo1.png" alt="Logo"></li>
@@ -52,6 +57,7 @@
             <li><button>Register Here</button></li>
         </ul>
     </nav>
+    
     <div class="video-container">
         <iframe 
             width="560" 
@@ -62,6 +68,7 @@
             allowfullscreen>
         </iframe>
         <div class="text-overlay">
+            <div class="dot-cursor"></div>
             <h1 style="font-family:New Century Schoolbook, TeX Gyre Schola, serif;">Career Pinnacle</h1>
             <p style="font-family: Georgia;">
                 <span>A complete assistance to your placement.If you are</span>
@@ -69,16 +76,17 @@
                 <span>for the placements and get all your doubts solved,</span>
                 <span> you are at the right place.</span>
             </p>
+            
         </div>
     </div>
-    
+    <div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+
             
-          <!-- Add other elements as needed -->
-        </div>
-      </div>
       
-    
+      <script src="cursor.js"></script>
       <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
       <script src="https://mediafiles.botpress.cloud/f6879831-46a1-4b39-b07f-60ad2ed588ee/webchat/config.js" defer></script>
-</body>
-</html>
+      
+    </body>
+    </html>
