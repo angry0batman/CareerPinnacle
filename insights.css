@@ -1,0 +1,26 @@
+
+.Placement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh
+}
+
+.Placement img {
+    max-width: 45%; /* Ensures images don't overflow */
+    height: auto;
+    animation: rotateImage 4s linear infinite;
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+

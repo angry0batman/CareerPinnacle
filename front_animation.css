@@ -37,7 +37,7 @@
     z-index: -1;
 }
 
-.text-overlay {
+.text-overlay1 {
     position: relative;
     top: -25%;
     left: 0;
@@ -52,13 +52,13 @@
     background: rgba(0, 0, 0, 0.5); /* Optional: To make the text stand out */
 }
 
-.text-overlay h1 {
+.text-overlay1 h1 {
     font-family: Garamond, serif;
     animation: slideDown 4s ease-out;
     margin: 0;
 }
 
-.text-overlay p {
+.text-overlay1 p {
     font-family: Copperplate, serif;
     display: flex;
     flex-direction: column;
@@ -66,7 +66,7 @@
     margin: 20px 0 0 0;
 }
 
-.text-overlay p span {
+.text-overlay1 p span {
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
@@ -76,18 +76,18 @@
     width: 0; /* Initial width set to 0 */
 }
 
-.text-overlay p span:nth-child(1) {
+.text-overlay1 p span:nth-child(1) {
     animation-delay: 0s;
 }
 
-.text-overlay p span:nth-child(2) {
+.text-overlay1 p span:nth-child(2) {
     animation-delay: 7s;
 }
 
-.text-overlay p span:nth-child(3) {
+.text-overlay1 p span:nth-child(3) {
     animation-delay: 14s;
 }
 
-.text-overlay p span:nth-child(4) {
+.text-overlay1 p span:nth-child(4) {
     animation-delay: 21s;
 }
