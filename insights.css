@@ -8,7 +8,7 @@
 }
 
 .Placement img {
-    max-width: 45%; /* Ensures images don't overflow */
+    max-width: 50%; /* Ensures images don't overflow */
     height: auto;
     animation: rotateImage 4s linear infinite;
 }
