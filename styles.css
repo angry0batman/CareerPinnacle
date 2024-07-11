@@ -8,73 +8,6 @@ body {
     background-color: #000000;
 }
 
-nav {
-    background-color: #ffffff;
-    overflow: hidden;
-    height: 50px; /* Adjust the height here */
-    display: flex; /* Use flexbox layout */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Distribute space between items */
-    position:relative;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Use flexbox layout for the list */
-    align-items: center; /* Center items vertically */
-    flex-grow: 1; /* Allow the ul to grow */
-    position: relative; /* Ensure stacking context */
-    z-index: 2; /* Higher z-index */
-}
-
-nav ul li {
-    margin-right: 20px; /* Add some margin between items */
-
-}
-
-nav ul li a {
-    display: block;
-    color: rgb(8, 7, 7);
-    text-align: right;
-    padding: 15px 20px; /* Reduce padding here */
-    text-decoration: none;
-    line-height: 20px; /* Add this to reduce the height of the link */
-}
-
-
-nav ul li a:hover {
-    background-color: #f12323;
-}
-
-nav ul li img {
-    height: 30px; /* Reduce the height of the image */
-    width: 90%;
-    padding: 15px 20px; /* Reduce padding here */
-    text-decoration: none;
-}
-
-nav ul li button {
-    margin-left: auto; /* Push the button to the right */
-}
-
-
-nav ul li button {
-    background-color:#000000;
-    color: rgb(255, 252, 252);
-    border: none;
-    border-radius: 8px;
-    border: 1px solid #030303;
-    padding: 15px 20px;
-    display: inline-block;
-    text-align: center;
-}
-
-nav ul li button:hover {
-    background-color:#f12323;
-    color: #070707;
-}
 
 
 .video-container iframe {
@@ -100,47 +33,50 @@ nav ul li button:hover {
     color: rgb(255, 255, 255);
 }
 
-.dropbtn {
-    background-color: #f12323;
-    color: white;
-    padding: 14px 20px;
-    font-size: 16px;
+
+/* styles.css */
+
+/* Style for the contact button */
+.contact-btn {
+    background-color: #f11313; 
     border: none;
-    cursor: pointer;
-    z-index: 2; /* Higher z-index */
-    position: relative; /* Ensure stacking context */
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 2; /* Higher z-index */
-}
-
-.dropdown-content a {
-    color: rgb(255, 254, 254);
-    background-color: #070707;
-    padding: 14px 20px;
+    color: rgb(255, 253, 253);
+    padding: 5px 20px;
+    text-align: center;
     text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    color: #fff;
-}
-
-.dropbtn:hover {
-    background-color: #000000;
-    color: white;
-    padding: 14px 20px;
-    font-size: 16px;
-    border: none;
+    display: inline-block;
+    font-size: 5px;
+    margin: 5px 40px ;
     cursor: pointer;
-}
-
+    border-radius: 8px;
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+  }
+  
+  .contact-btn:hover {
+    background-color: #06adfadc; /* Darker green on hover */
+    
+  }
+  
+  /* Animation effect */
+  @keyframes zoominout {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .contact-btn a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    animation: zoominout 3s infinite; /* Apply animation effect */
+  }
+  
 
 
 
