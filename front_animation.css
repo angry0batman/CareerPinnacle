@@ -50,6 +50,7 @@
     color: white;
     text-align: center;
     background: rgba(0, 0, 0, 0.5); /* Optional: To make the text stand out */
+    z-index: 1; /* Higher than video, lower than dropdown */
 }
 
 .text-overlay1 h1 {
@@ -90,4 +91,48 @@
 
 .text-overlay1 p span:nth-child(4) {
     animation-delay: 21s;
+}
+
+nav {
+    position: relative;
+    z-index: 2; /* Higher than text overlay */
+}
+
+.dropbtn {
+    background-color: #f12323;
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3; /* Higher than nav and text overlay */
+}
+
+.dropdown-content a {
+    color: rgb(255, 254, 254);
+    background-color: #070707;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #fff;
+}
+
+.dropbtn:hover {
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }

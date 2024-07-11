@@ -25,6 +25,8 @@ nav ul {
     display: flex; /* Use flexbox layout for the list */
     align-items: center; /* Center items vertically */
     flex-grow: 1; /* Allow the ul to grow */
+    position: relative; /* Ensure stacking context */
+    z-index: 2; /* Higher z-index */
 }
 
 nav ul li {
@@ -73,20 +75,7 @@ nav ul li button:hover {
     background-color:#f12323;
     color: #070707;
 }
-.video-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Make the container cover the full viewport height */
-    overflow:visible; /* Hide any overflow content */
-    cursor: none; /* Hide the default cursor */
-}
 
-.video-container {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-}
 
 .video-container iframe {
     position: absolute;
@@ -103,14 +92,13 @@ nav ul li button:hover {
 .text-overlay1 h1 {
     font-size: 80px;
     font-weight: bold;
-    color:#ffffff
+    color: #ffffff;
 }
 
 .text-overlay1 p {
     font-size: 30px;
     color: rgb(255, 255, 255);
 }
-
 
 .dropbtn {
     background-color: #f12323;
@@ -119,6 +107,8 @@ nav ul li button:hover {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    z-index: 2; /* Higher z-index */
+    position: relative; /* Ensure stacking context */
 }
 
 .dropdown-content {
@@ -127,7 +117,7 @@ nav ul li button:hover {
     background-color: #ffffff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2; /* Higher z-index */
 }
 
 .dropdown-content a {
@@ -139,9 +129,20 @@ nav ul li button:hover {
 }
 
 .dropdown-content a:hover {
-    color:#fff
- 
+    color: #fff;
 }
+
+.dropbtn:hover {
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
 
 .show {
     display: block;
