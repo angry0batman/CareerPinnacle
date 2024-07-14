@@ -1,0 +1,65 @@
+
+.codefight1 {
+    width: 80%;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.codefight-text-section {
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+.animated-text {
+    color: rgb(0, 0, 0);
+    font-size: 2.5em;
+    animation: textAnimation 2s ease-in-out infinite;
+}
+
+@keyframes textAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.codefight {
+    color: #ff6347; /* Tomato color for emphasis */
+}
+
+.explore-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #ff6347;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+}
+
+.image-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 80px;
+    margin-right: 3px;
+    gap: 10px;
+    max-width: 35%; /* Adjust as needed */
+}
+
+.image-collage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
