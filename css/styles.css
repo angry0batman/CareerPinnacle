@@ -53,7 +53,8 @@ body {
   }
   
   .contact-btn:hover {
-    background-color: #06adfadc; /* Darker green on hover */
+    background-color: #000000dc; /* Darker green on hover */
+    color: #ffffff;
     
   }
   

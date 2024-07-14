@@ -1,7 +1,7 @@
 :root {
   --color-primary: #ff0d00;
-  --color-white: #ffffff;
-  --color-black: #010003;
+  --color-white: #000000;
+  --color-black: #dad9db;
   --color-black-1: #fbfbfb;
 }
 
@@ -32,7 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
+  padding: 10px 5%;
 
   position: relative;
 }
@@ -44,7 +44,7 @@ body {
 
 .menu-bar ul li {
   /* width: 120px; */
-  padding: 10px 45px;
+  padding: 15px 45px;
   /* text-align: center; */
 
   position: relative;
@@ -65,7 +65,7 @@ body {
 .fas {
   float: right;
   margin-left: 10px;
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 /* dropdown menu style */
